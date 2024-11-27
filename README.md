@@ -26,60 +26,81 @@ Bu projede aşağıdaki temel işlevler bulunmaktadır:
 
 1. **Java 17+** yüklenmiş olmalıdır.
 2. **Maven** veya **Gradle** ile bağımlılıklar yönetilmektedir.
-3. Test için POSTMAN kullanabilirsiniz.
-   
- AddCustomer servisi için postman sorgusu : POST http://localhost:8080/customers 
- Body
-{
-  "name": "x",
-  "email": "x@example.com"
-}
+3. Test için **Postman** kullanabilirsiniz.
 
-GetProduct
--GetProduct servisi için postman sorgusu : GET http://localhost:8080/products/{Product id}
+### API Servisleri
 
-CreateProduct
--CreateProduct servisi için postman sorgusu : POST http://localhost:8080/products
-Body
-{
-  "name": "Laptop",
-  "price": 1100.00,
-  "stockQuantity": 10
-}
+#### 1. **AddCustomer**
+   - **Yöntem**: `POST`
+   - **URL**: `http://localhost:8080/customers`
+   - **Body**:
+     ```json
+     {
+       "name": "x",
+       "email": "x@example.com"
+     }
+     ```
 
-UpdateProduct
--UpdateProduct servisi için postman sorgusu : PUT http://localhost:8080/products/{Product id}
-Body
-{
-  "name": "Laptop",
-  "price": 1700.00,
-  "stockQuantity": 10
-}
+#### 2. **GetProduct**
+   - **Yöntem**: `GET`
+   - **URL**: `http://localhost:8080/products/{Product id}`
 
-DeleteProduct
--DeleteProduc servisi için postman sorgusu : DELETE http://localhost:8080/products/{Product id}
+#### 3. **CreateProduct**
+   - **Yöntem**: `POST`
+   - **URL**: `http://localhost:8080/products`
+   - **Body**:
+     ```json
+     {
+       "name": "Laptop",
+       "price": 1100.00,
+       "stockQuantity": 10
+     }
+     ```
 
-GetCart
--GetCart servisi için postman sorgusu : GET http://localhost:8080/carts/{Customer id}
+#### 4. **UpdateProduct**
+   - **Yöntem**: `PUT`
+   - **URL**: `http://localhost:8080/products/{Product id}`
+   - **Body**:
+     ```json
+     {
+       "name": "Laptop",
+       "price": 1700.00,
+       "stockQuantity": 10
+     }
+     ```
 
-UpdateCart
--UpdateCart servisi için postman sorgusu : PUT http://localhost:8080/carts/{Customer id}/update
+#### 5. **DeleteProduct**
+   - **Yöntem**: `DELETE`
+   - **URL**: `http://localhost:8080/products/{Product id}`
 
-EmptyCart
--EmptyCart servisi için postman sorgusu : DELETE http://localhost:8080/carts/{Customer id}/empty
+#### 6. **GetCart**
+   - **Yöntem**: `GET`
+   - **URL**: `http://localhost:8080/carts/{Customer id}`
 
-PlaceOrder
--PlaceOrder servisi için postman sorgusu : POST http://localhost:8080/orders/{Customer id}/place
+#### 7. **UpdateCart**
+   - **Yöntem**: `PUT`
+   - **URL**: `http://localhost:8080/carts/{Customer id}/update`
 
-GetOrderForCode
--GetOrderForCode servisi için postman sorgusu : GET http://localhost:8080/orders/{Customer id}
+#### 8. **EmptyCart**
+   - **Yöntem**: `DELETE`
+   - **URL**: `http://localhost:8080/carts/{Customer id}/empty`
 
-GetAllOrdersForCustomer
--GetAllOrdersForCustomer servisi için postman sorgusu : GET http://localhost:8080/orders/customers/{Customer id}
+#### 9. **PlaceOrder**
+   - **Yöntem**: `POST`
+   - **URL**: `http://localhost:8080/orders/{Customer id}/place`
 
-AddProductToCart
--AddProductToCart servisi için postman sorgusu : POST http://localhost:8080/carts/{customerId}/products/{productId}/add
+#### 10. **GetOrderForCode**
+   - **Yöntem**: `GET`
+   - **URL**: `http://localhost:8080/orders/{Customer id}`
 
-RemoveProductFromCart
--RemoveProductFromCart servisi için postman sorgusu : DELETE http://localhost:8080/carts/{customerId}/remove
+#### 11. **GetAllOrdersForCustomer**
+   - **Yöntem**: `GET`
+   - **URL**: `http://localhost:8080/orders/customers/{Customer id}`
 
+#### 12. **AddProductToCart**
+   - **Yöntem**: `POST`
+   - **URL**: `http://localhost:8080/carts/{customerId}/products/{productId}/add`
+
+#### 13. **RemoveProductFromCart**
+   - **Yöntem**: `DELETE`
+   - **URL**: `http://localhost:8080/carts/{customerId}/remove`
