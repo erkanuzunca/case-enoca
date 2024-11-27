@@ -36,10 +36,10 @@ Bu projede aşağıdaki temel işlevler bulunmaktadır:
 }
 
 GetProduct
-GetProduct servisi için postman sorgusu : GET http://localhost:8080/products/{Product id}
+-GetProduct servisi için postman sorgusu : GET http://localhost:8080/products/{Product id}
 
 CreateProduct
-CreateProduct servisi için postman sorgusu : POST http://localhost:8080/products
+-CreateProduct servisi için postman sorgusu : POST http://localhost:8080/products
 Body
 {
   "name": "Laptop",
@@ -48,7 +48,7 @@ Body
 }
 
 UpdateProduct
-UpdateProduct servisi için postman sorgusu : PUT http://localhost:8080/products/{Product id}
+-UpdateProduct servisi için postman sorgusu : PUT http://localhost:8080/products/{Product id}
 Body
 {
   "name": "Laptop",
@@ -57,29 +57,29 @@ Body
 }
 
 DeleteProduct
-DeleteProduc servisi için postman sorgusu : DELETE http://localhost:8080/products/{Product id}
+-DeleteProduc servisi için postman sorgusu : DELETE http://localhost:8080/products/{Product id}
 
 GetCart
-GetCart servisi için postman sorgusu : GET http://localhost:8080/carts/{Customer id}
+-GetCart servisi için postman sorgusu : GET http://localhost:8080/carts/{Customer id}
 
 UpdateCart
-UpdateCart servisi için postman sorgusu : PUT http://localhost:8080/carts/{Customer id}/update
+-UpdateCart servisi için postman sorgusu : PUT http://localhost:8080/carts/{Customer id}/update
 
 EmptyCart
-EmptyCart servisi için postman sorgusu : DELETE http://localhost:8080/carts/{Customer id}/empty
+-EmptyCart servisi için postman sorgusu : DELETE http://localhost:8080/carts/{Customer id}/empty
 
 PlaceOrder
-PlaceOrder servisi için postman sorgusu : POST http://localhost:8080/orders/{Customer id}/place
+-PlaceOrder servisi için postman sorgusu : POST http://localhost:8080/orders/{Customer id}/place
 
 GetOrderForCode
-GetOrderForCode servisi için postman sorgusu : GET http://localhost:8080/orders/{Customer id}
+-GetOrderForCode servisi için postman sorgusu : GET http://localhost:8080/orders/{Customer id}
 
 GetAllOrdersForCustomer
-GetAllOrdersForCustomer servisi için postman sorgusu : GET http://localhost:8080/orders/customers/{Customer id}
+-GetAllOrdersForCustomer servisi için postman sorgusu : GET http://localhost:8080/orders/customers/{Customer id}
 
 AddProductToCart
-AddProductToCart servisi için postman sorgusu : POST http://localhost:8080/carts/{customerId}/products/{productId}/add
+-AddProductToCart servisi için postman sorgusu : POST http://localhost:8080/carts/{customerId}/products/{productId}/add
 
 RemoveProductFromCart
-RemoveProductFromCart servisi için postman sorgusu : DELETE http://localhost:8080/carts/{customerId}/remove
+-RemoveProductFromCart servisi için postman sorgusu : DELETE http://localhost:8080/carts/{customerId}/remove
 
